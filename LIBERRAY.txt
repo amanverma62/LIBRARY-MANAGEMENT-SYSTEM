@@ -1,0 +1,300 @@
+//CODE WRITTEN BY AMAN VERMA ;
+
+#include<iostream>
+using namespace std;
+int main(){
+
+  int response,  pass, option, bi, pi, sp, jwaab, password;
+  string un, name, bn, an, db, sun, sign, li, libraryid, username;
+
+  li = "library546";
+
+  un = "digital321";
+
+  pass = 1234567;
+  
+
+  while(1){
+
+    cout<<"\n";
+ 
+ cout<<"ENTER THE NAME OF URS "<<endl;
+
+  cout<<"\n";
+ cin>>name;
+ 
+ cout<<"\n";
+
+ cout<<"ENTER YOUR LIBRARY ID : "<<endl;
+ 
+ cout<<"\n";
+ 
+ cin>>libraryid;
+
+ if(libraryid==li){
+
+   cout<<"\n";
+
+   cout<<"your library id is correct !"<<endl;
+
+   cout<<"\n";
+
+ }
+
+
+ else{
+   
+   cout<<"\n";
+
+   cout<<"invaid id you are kicked out from the digital library reEnter the correct id "<<endl;
+
+   break;
+ }
+  
+  cout<<"\t"<<name<<" WELCOME TO THE DIGITAL LIBRARY\t\t"<<endl;
+
+  cout<<"\n";
+
+  cout<<"THERE ARE 3 OPTIONS CHOOSE 1 ACOORDING TO UR ROLE"<<endl;
+
+  cout<<" 1 - TEACHER"<<endl;
+  cout<<" 2 - STUDENT"<<endl;
+  cout<<" 3 - EXIST FROM THE LIBRARY"<<endl;
+  
+  cout<<"\n";
+
+  cout<<"\t\tENTER THE RESPONSE BELOW !\t\t"<<endl;
+
+  cin>>response;
+
+  if(response==1){
+
+    cout<<"\n";
+
+    cout<<"\t\t--> FOR TEACHER ENTER THE GIVEN DETAILS<  --\t\t "<<endl;
+
+    cout<<"ENTER THE USERNAME : -- "<<endl;
+    cin>>username;
+
+    if(username==un){
+
+      cout<<"\n";
+
+      cout<<"CORRECT ! "<<endl;
+    }
+
+    else{
+
+      cout<<"\n";
+
+      cout<<"ivalid username please reenter the username ! "<<endl;
+
+       break;
+    }
+
+    cout<<"\n";
+
+    cout<<"ENTER THE PASSWORD : -- "<<endl;
+    cin>>password;
+
+    if(password==pass){
+      
+      cout<<"CORRECT PASSWORD ! "<<endl;
+
+    }
+
+    else{
+
+      cout<<"invalid password please reenter the passoword"<<endl;
+
+      break;
+    }
+
+    cout<<"\n";
+
+    cout<<"THERE ARE 4 OPTIONS FOR TEACHERS : "<<endl;
+
+    cout<<" 1 - ADD BOOKS : "<<endl;
+    cout<< "2 - DELETE BOOKS :"<<endl;
+    cout<<" 3 - UPDATE BOOKS :"<<endl;
+    cout<<" 4 - LIST OF THE BOOKS : "<<endl;
+
+    cout<<"\n";
+    
+    cout<<"\t\t ENTER THE OPTION BELOW : \t\t"<<endl;
+
+    cin>>option;
+
+  }
+   
+   if(option==1){
+
+     cout<<"\t\t FOR ADDING BOOKS ENTER THE DETAILS GIVEN BELOW !"<<endl;
+
+     cout<<"ENTER THE BOOK ID : "<<endl;
+     cin>>bi;
+     cout<<"ENTER THE BOOK NAME : "<<endl;
+     cin>>bn;
+     cout<<"ENTER THE BOOK AUTHOR NAME : "<<endl;
+     cin>>an;
+
+     cout<<"YOUR BOOK WAS SUCESSFULLY ADDED IN THE LIBRARY THANKU ! MR/MS - "<<name<<endl;
+   }
+
+   if(option==2){
+
+     cout<<"\n";
+     cout<<"FOR DELETING THE BOOK ENTER THE GIVEN DETAILS "<<endl;
+
+     cout<<"\t\tENTER THE BOOK NAME -- \t\t"<<endl;
+
+     cin>>db;
+     
+     cout<<"ENTER THE BOOK AUTHOR NAME"<<endl;
+     cin>>an;
+
+     cout<<"YOUR BOOK IS SUCESSFULLY DELETED FROM THE LIBRARY"<<endl;
+
+
+   }
+
+    
+
+    if(option==3){
+
+      cout<<"\n";
+
+      cout<<"\t\tFOR UPDATING / REPLACING THE BOOK ENTER THE GIVEN DETAILS\t\t"<<endl;
+
+      cout<<"ENTER THE BOOK ID WHICH U REPLACE FROM "<<endl;
+
+      cin>>pi;
+
+      cout<<"ENTER THE NEW BOOK NAME "<<endl;
+      cin>>bn;
+
+      cout<<"ENTER THE BOOK AUTHOR NAME"<<endl;
+      cin>>an;
+
+      cout<<"YOUR BOOK IS SUCESSFULLY UPDATED/ REPLACED  "<<endl;
+
+
+    }
+
+   
+
+    if(option==4){
+      
+      cout<<"\n";
+
+      cout<<"\t\tTHERE ARE 10 BOOKS AVAILABLE IN THE LIBRARY !\t\t"<<endl;
+
+      cout<<" 1  -  PASHMINA BY - NIDHI CHANANI. "<<endl;
+      cout<<" 2 -   THE WINDFALL BY - DIKSHA BASU"<<endl;
+      cout<<" 3 -    NO ONE CAN PRONOUNCE MY NAME  BY - RAKESH SATYAL "<<endl;
+      cout<<" 4 -    THE GUEST BY MITALI MEELAN"<<endl;
+      cout<<" 5 -  A HIMALAYAN LOVE STORY BY - NAMITA GOKHLE"<<endl;
+      cout<<" 6 - THE IBIS TROLOGY BY AMITAV GOSH"<<endl;
+      cout<<" 7 - LANKA 'S PRINCESS BY KAVITA KANE"<<endl;
+      cout<<" 8 -    RAJ BY GITA MEHTA"<<endl;
+      cout<<" 9 - SMALL DAYS AND NIGHTS BY TISHANI "<<endl;
+      cout<<" 10 - NARCOPOLIS BY JEET THAYIL"<<endl;
+    }
+
+    if(response==2){
+
+      cout<<"\n";
+
+      cout<<"\t\t FOR STUDENT ENTER THE GIVEN DETAILS\t\t"<<endl;
+
+      cout<<"ENTER THE USERNAME : "<<endl;
+      cin>>sun;
+      
+      cout<<"ENTER THE PASSWORD : "<<endl;
+      cin>>sp;
+
+      cout<<"\n";
+
+      cout<<"THERE ARE 3 OPTIONS FOR THE STUDENTS !"<<endl;
+
+      cout<<" 1 - RETURN BOOK"<<endl;
+      cout<<" 2 - BORROW BOOK"<<endl;
+      cout<<" 3 - LIST OF THE BOOKS "<<endl;
+
+      cin>>jwaab;
+
+      
+    }
+     
+     if(jwaab==1){
+
+       cout<<"\n";
+       cout<<"FOR RETURNING BOOK ENTER THE GIVEN DETAILS"<<endl;
+
+       cout<<"ENTER THE BOOK NAME "<<endl;
+       cin>>bn;
+
+       cout<<name<< " you returned the book to the library on  _ date  sucessfully thanku !"<<endl;
+
+
+     }
+      
+      if(jwaab==2){
+
+        cout<<"\n";
+
+        cout<<"\t\t FOR BORROW THE BOOK ENTER THE GIVEN DETAILS"<<endl;
+
+        cout<<"ENTER THE BOOK NAME WHICH YOU WANT TO BORROW "<<endl;
+        cin>>bn;
+
+        cout<<"ENTER THE BOOK AUTHOR NAME "<<endl;
+        cin>>an;
+
+        cout<<"ENTER THE PASSWORD  TO CONFIRM "<<endl;
+        cin>>pass;
+
+        cout<<"ENTER YOUR SIGNETURE   AND DECELARATION HERE "<<endl;
+
+        cin>>sign;
+
+        cout<<name<<" YOU BORROWED THE BOOK ON THIS _ DATE \n";
+        cout<<" YOUR RETURNING DATE IS _ "<<endl;
+
+      }
+    
+       if(jwaab==3){
+
+         cout<<"\n";
+
+          cout<<"\t\tTHERE ARE 10 BOOKS AVAILABLE IN THE LIBRARY !\t\t"<<endl;
+
+      cout<<" 1  -  PASHMINA BY - NIDHI CHANANI. "<<endl;
+      cout<<" 2 -   THE WINDFALL BY - DIKSHA BASU"<<endl;
+      cout<<" 3 -    NO ONE CAN PRONOUNCE MY NAME  BY - RAKESH SATYAL "<<endl;
+      cout<<" 4 -    THE GUEST BY MITALI MEELAN"<<endl;
+      cout<<" 5 -  A HIMALAYAN LOVE STORY BY - NAMITA GOKHLE"<<endl;
+      cout<<" 6 - THE IBIS TROLOGY BY AMITAV GOSH"<<endl;
+      cout<<" 7 - LANKA 'S PRINCESS BY KAVITA KANE"<<endl;
+      cout<<" 8 -    RAJ BY GITA MEHTA"<<endl;
+      cout<<" 9 - SMALL DAYS AND NIGHTS BY TISHANI "<<endl;
+      cout<<" 10 - NARCOPOLIS BY JEET THAYIL"<<endl;
+
+        
+       }
+
+       if(response==3){
+
+         
+
+         cout<<"\n";
+
+         
+
+         cout<<"\t\tYOU ARE EXISTED FROM THE DIGAL LIBRARY THANKU\t\t"<<endl;
+       }
+
+  }
+
+return 0;
+}
